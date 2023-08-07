@@ -2,16 +2,25 @@
 @tailwind components;
 
 body{
-    @apply bg-green-500
-    p-5;
+    @apply bg-green-500 w-screen h-full;
+}
+
+h1{
+    @apply text-6xl text-white;
 }
 
 .header{
-    @apply bg-red-900 flex justify-between
+    @apply w-full bg-green-950 flex justify-between place-items-center
+    px-12 md:px-24 py-4
+    text-white font-bold tracking-widest text-lg uppercase;
 }
 
 .header ul{
-    @apply w-1/2 flex justify-between;
+    @apply hidden xl:flex xl:space-x-10;
+}
+
+.header li{
+    @apply p-1 hover:bg-green-500;
 }
 
 .header i{
@@ -20,15 +29,20 @@ body{
 
 
 .test{
-    @apply text-3xl font-bold underline bg-red-500;
+    background-image: url("/public/img/16.jpg");
+    @apply bg-no-repeat bg-cover bg-center w-screen h-screen
+    md:px-24
+    text-center font-bold place-items-center justify-center shadow-2xl;
 }
 
 
 
 
 
+
+
 .footer{
-    @apply bg-red-900 text-center;
+    @apply bg-green-900 text-center;
 }
 
 @tailwind utilities;
